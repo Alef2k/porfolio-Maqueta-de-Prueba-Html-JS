@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f3f3f3;
+    font-family: 'Open Sans' , sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ancho web y margenes laterales */
+
+.contenedor {
+   width: 90%; 
+   max-width: 1100px;
+   margin: auto;
+}
+
+
+

@@ -1,167 +1,247 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Porfolio</title>
-	
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5f2423dc2f.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 	<!-- vincular CSS -->
-    <link rel="stylesheet" href="styles.css">
-    
-  </head>
-  <body>
-<!-- Cabecera -->
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+	<!-- Cabecera -->
 	<div class="contenedor">
-	<div class="grid">
-		<div class="g-col-6" >
-			 <!-- Bootstrap Navbar CSS -->
-			 <nav class="navbar navbar-dark bg-dark">
-				<div class="container-fluid">
-					
-				  <a class="navbar-brand" href="#">
-				  <img src="img/aplogo-20-20.png" alt="Argentina Programa" width="94" height="25" class="d-inline-block align-text-top">
-<div class="g-col-6">
-						<!-- Redes Sociales -->
-						<!-- Facebook -->
-						<a style="color: #838383;" href="https://www.facebook.com/alef2k" target="blank"
-						><i class="fab fa-facebook-f "></i></a>
-						<!-- Twitter -->
-						<a style="color: #838383;" href="#!" target="blank"
-						><i class="fab fa-twitter"></i></a>
-						<a style="color: #838383;"href="https://www.linkedin.com/in/ale-fer" target="blank">
-						<i class="fa fa-linkedin"></i></a>
-						<a style="color: #838383;"href="https://github.com/Alef2k" target="blank">
-						<i class="fa fa-github"></i></a>
-						<button type="button" class="btn btn-secondary btn-sm">Login</button>
-					</div>		
-				</div>	   
-		  </div>
-		  </a>
-		</div>	
-	  </nav> 
-	</div>
-	
-	<!-- Contenidos -->
-    <!-- botonera -->
-    <div id="borde" class="contenedor" >
-    <img src="img/cabecera.jpg" class ="img-fluid" alt="Responsive image"  >
-	<div id="info"  style="padding: 16px;">
-		<img src="img/profile.jpg" class ="profile-image" alt="profile-image"  >
-		<div class="btn-edit float-end"> <a href="#" class="btn-right"> <i class="fa fa-pen"> </i></a></div>
+		<div class="grid">
+			<div class="g-col-6">
+				<!-- Bootstrap Navbar CSS -->
+				<nav class="navbar navbar-dark bg-dark">
+					<div class="container-fluid">
 
-	<div id="info-data" >
-		<div class="col">
-		<h2>Alejandro Fernandez</h2>
-		<div class="float-end">
-			<a href="https://www.mariano-moreno.com.ar" target="blank">
-				<img src="img/logos_mm.jpg" ></a>
-			   </div>
-		<div id="info-company"> Diseñador Grafico y Web
+						<a class="navbar-brand" href="#">
+							<img src="img/aplogo-20-20.png" alt="Argentina Programa" width="94" height="25"
+								class="d-inline-block align-text-top">
+							<div class="g-col-6">
+								<!-- Redes Sociales -->
+								<!-- Facebook -->
+								<a style="color: #838383;" href="https://www.facebook.com/alef2k" target="blank"><i
+										class="fab fa-facebook-f "></i></a>
+								<!-- Twitter -->
+								<a style="color: #838383;" href="#!" target="blank"><i class="fab fa-twitter"></i></a>
+								<a style="color: #838383;" href="https://www.linkedin.com/in/ale-fer" target="blank">
+									<i class="fa fa-linkedin"></i></a>
+								<a style="color: #838383;" href="https://github.com/Alef2k" target="blank">
+									<i class="fa fa-github"></i></a>
+								<button type="button" class="btn btn-secondary btn-sm">Login</button>
+							</div>
+					</div>
 			</div>
-		<div id="info-contac"> 
-		<span>Cordoba (Argentina)</span>
-	 		<span> <a href="#">Informacion de Contacto</a></span>
+			</a>
 		</div>
-		
-	</div>
-	
-</div>
-</div>
-	<div id="info-actions">
-		<button type="button" class="btn btn-primary"> Tengo interes en</button>
-		<button type="button" class="btn btn-light"> Añadir Sección</button>
+		</nav>
 	</div>
 
-		
-</div>
-<script>
-	// funcion que cambia:
-	// cambia el estilo del input a visible
-	//toma el valor del texto con id "tex-acercade"	
-	//lo muestra en consola
+	<!-- Contenidos -->
+	<!-- botonera -->
+	<div id="borde" class="contenedor">
+		<img src="img/cabecera.jpg" class="img-fluid" alt="Responsive image">
+		<div id="info" style="padding: 16px;">
+			<img src="img/profile.jpg" class="profile-image" alt="profile-image">
+			<div class="btn-edit float-end" onClick="cambiar_parrafo()"> <a href="#" class="btn-right"> <i
+						class="fa fa-pen"> </i></a></div>
+			<script>
+				// funcion que cambia:
+				// cambia el estilo del input a visible
+				//toma el valor del texto con id "tex-acercade"	
+				//lo muestra en consola
+				function cambiar_parrafo2() {
+					document.getElementById("edit-company").style.display = "block";
+					let texto = document.getElementById("info-company").innerText;
+					console.log(texto)
+				};
+				function myFunction2(valor) {
+					document.getElementById("info-company").invertText = valor;
+
+				};
+			</script>
+			<div id="info-data">
+				<div class="col">
+					<h2>Alejandro Fernandez</h2>
+					<div class="float-end">
+						<a href="https://www.mariano-moreno.com.ar" target="blank">
+							<img src="img/logos_mm.jpg"></a>
+					</div>
+					<div id="info-company"> Diseñador Grafico y Web
+					</div>
+					<div>
+						<input id="edit-company" type="text" oninput="myFunction2(this.value)" style="display:none">
+					</div>
+					<div id="info-contac">
+						<span>Cordoba (Argentina)</span>
+						<span> <a href="#">Informacion de Contacto</a></span>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div id="info-actions" style="padding: 16px">
+			<button type="button" class="btn btn-primary"> Tengo interes en</button>
+			<button type="button" class="btn btn-primary"> Añadir Sección</button>
+		</div>
+
+
+	</div>
+	<script>
+		// funcion que cambia:
+		// cambia el estilo del input a visible
+		//toma el valor del texto con id "tex-acercade"	
+		//lo muestra en consola
 		function cambiar_parrafo() {
-			document.getElementById("edit-acercade").style.display="block";
+			document.getElementById("edit-acercade").style.display = "block";
 			let texto = document.getElementById("text-acercade").innerText;
 			console.log(texto)
 		};
-		function myFunction2(valor){
-			document.getElementById("text-acercade").invertText=valor;
+		function myFunction2(valor) {
+			document.getElementById("text-acercade").invertText = valor;
 
 		};
 	</script>
 	<!-- Acerca de: -->
-	<div id="borde" class="contenedor" >
-		<h2>Acerca de: </h2> 
+	<div id="borde" class="contenedor_">
+		<h2>Acerca de: </h2>
 		<div class="btn-edit float-end" onClick="cambiar_parrafo()">
 			<a href="#" class="btn-right">
 				<i class="fa fa-pen"></i>
-				</a>
-			</div> 
-		
+			</a>
+		</div>
+
 		<div>
 			<p id="text-acercade">Diseñador gráfico y Web</p>
 		</div>
 		<div>
 			<input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
 		</div>
-	</div>	
+	</div>
 
 	<!-- Experiencia: -->
-		<div id="borde" class="contenedor" >
+	<div id="borde" class="contenedor_" >
 		<b> Experiencia: </b> <br>
-		<small> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam tenetur inventore deleniti quaerat hic sunt ipsa dolores ducimus reiciendis optio cupiditate quis voluptas, natus, ea iusto temporibus reprehenderit a nam. </small>
+		<small> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam tenetur inventore deleniti quaerat hic
+			sunt ipsa dolores ducimus reiciendis optio cupiditate quis voluptas, natus, ea iusto temporibus
+			reprehenderit a nam. </small>
 	</div>
 
 	<!-- Educacion -->
-	<div id="borde" class="contenedor" >
+	<div id="borde" class="contenedor_">
 		<b>Educacion </b> <br> <small>
-		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam culpa est minima numquam sapiente exercitationem ipsum fugit nemo ab cum nam </small>
-		</div>
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam culpa est minima numquam sapiente
+			exercitationem ipsum fugit nemo ab cum nam </small>
+	</div>
 
-	<!-- Hard Skills & Softs Skills -->	
-	<div id="borde" class="contenedor">
-	<b> Hard Skills & Softs Skills </b> 
-		<small> ipsum dolor, sit amet consectetur adipisicing elit. Quidem blanditiis, dolore, aperiam atque dolor hic debitis voluptatibus repudiandae aliquam.<strong><p class="destacado">Repellat facere earum enim. </p></strong> <strong> Deserunt soluta. Consectetur itaque numquam maxime porro.</strong> </small>
+	<!-- Hard Skills & Softs Skills -->
+	<div id="borde" class="contenedor_">
+		<b> Hard Skills & Softs Skills </b>
+		
+			<div>
+<small> Las hard skills son aquellas habilidades que pueden aprenderse mediante formación y evaluarse y acreditarse a
+	través de
+	una certificación o experiencia <profesional class="br">- Idiomas	
+	- Licenciaturas, formación, certificados - Contabilidad - Mecanografía
+	- Lenguajes de programación
+	- Conocimientos de software - etc.</profesional></small><strong>
+			</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+				</div>
+				<p class="destacado"> sistemas de gestión de contenidos (WordPress</p></strong>
+				<small> Las hard skills son aquellas habilidades que pueden aprenderse mediante formación y evaluarse y acreditarse a
+					través de
+					una certificación o experiencia profesional.</small>
+				<div class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+						aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
+				</div>
+				<strong><p class="destacado">Softs Skills</p>
+			</strong> <strong> Deserunt soluta. Consectetur itaque numquam maxime porro.</strong> </small>
 
-	</div>	
+	</div>
 
 
-    <div class="contenedor2" >
-	<footer>
-    <!-- Facebook -->
+	<div class="contenedor2">
+		<footer>
+			<!-- Facebook -->
 			<a style="color: #838383;" href="https://www.facebook.com/alef2k" target="blank">
-					<i class="fab fa-facebook-f"></i></a>
-	<!-- Twitter -->
-			<a style="color: #838383;" href="#!" target="blank"
-					><i class="fab fa-twitter"></i></a>
-	<!-- Linkedin -->				
-			<a style="color: #838383;"href="https://www.linkedin.com/in/ale-fer" target="blank">
-					<i class="fa fa-linkedin"></i></a>
-	<!-- github -->								
-			<a style="color: #838383;"href="https://github.com/Alef2k" target="blank">
-					<i class="fa fa-github"></i></a>
+				<i class="fab fa-facebook-f"></i></a>
+			<!-- Twitter -->
+			<a style="color: #838383;" href="#!" target="blank"><i class="fab fa-twitter"></i></a>
+			<!-- Linkedin -->
+			<a style="color: #838383;" href="https://www.linkedin.com/in/ale-fer" target="blank">
+				<i class="fa fa-linkedin"></i></a>
+			<!-- github -->
+			<a style="color: #838383;" href="https://github.com/Alef2k" target="blank">
+				<i class="fa fa-github"></i></a>
 
-     </footer>                   
-     </div>
- 
-<!-- Optional JavaScript; choose one of the two! -->
+		</footer>
+	</div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+
+	<!-- Option 2: Separate Popper and Bootstrap JS -->
+	<!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-  </body>
+	<script>
+
+
+		function cambiar_parrafo() {
+			document.getElementById("edit-acercade").style.display = "block";
+			let texto = document.getElementById("text-acercade").innerText;
+			console.log(texto);
+		};
+		function cambiar_parrafo2() {
+			document.getElementById("edit-company").style.display = "block";
+			let texto = document.getElementById("info-company").innerText;
+			console.log(texto);
+		};
+
+		function myFunction2(valor) {
+			document.getElementById("text-acercade").innerText = valor;
+		};
+
+		function logMessage(message) {
+			console.log(message + "<br>");
+		}
+
+		let textarea = document.getElementById("edit-acercade")
+		textarea.addEventListener('keyup', (e) => {
+			logMessage('Key "${e.key}" released [event: keyup]');
+			if (e.key == "Enter") {
+				document.getElementById("edit-acercade").style.display = "none"
+			}
+		});
+
+
+	</script>
+</body>
+
 </html>

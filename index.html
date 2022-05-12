@@ -59,8 +59,9 @@
 		<img src="img/cabecera.jpg" class="img-fluid" alt="Responsive image">
 		<div id="info" style="padding: 16px;">
 			<img src="img/profile.jpg" class="profile-image" alt="profile-image">
-			<div class="btn-edit float-end" onClick="cambiar_parrafo()"> <a href="#" class="btn-right"> <i
-						class="fa fa-pen"> </i></a></div>
+			<div class="btn-edit float-end" onClick="cambiar_parrafo2()"> 
+				<a href="\\" class="btn-right"><i class="fa fa-pen" aria-hidden="true"></i>	</a>
+		</div>
 			<script>
 				// funcion que cambia:
 				// cambia el estilo del input a visible
@@ -71,7 +72,7 @@
 					let texto = document.getElementById("info-company").innerText;
 					console.log(texto)
 				};
-				function myFunction2(valor) {
+				function myFunction3(valor) {
 					document.getElementById("info-company").invertText = valor;
 
 				};
@@ -83,10 +84,9 @@
 						<a href="https://www.mariano-moreno.com.ar" target="blank">
 							<img src="img/logos_mm.jpg"></a>
 					</div>
-					<div id="info-company"> Diseñador Grafico y Web
-					</div>
+					<div id="info-company"> Diseñador Grafico y Web	</div>
 					<div>
-						<input id="edit-company" type="text" oninput="myFunction2(this.value)" style="display:none">
+						<input id="edit-company" type="text" oninput="myFunction3(this.value)" style="display:none">
 					</div>
 					<div id="info-contac">
 						<span>Cordoba (Argentina)</span>
@@ -121,31 +121,37 @@
 	</script>
 	<!-- Acerca de: -->
 	<div id="borde" class="contenedor_">
-		<h2>Acerca de: </h2>
+		<b>Acerca de mí: </b>
 		<div class="btn-edit float-end" onClick="cambiar_parrafo()">
-			<a href="#" class="btn-right">
-				<i class="fa fa-pen"></i>
-			</a>
+			<a href="\\" class="btn-right"><i class="fa fa-pen" aria-hidden="true"></i>	</a>	
 		</div>
 
 		<div>
-			<p id="text-acercade">Diseñador gráfico y Web</p>
+			<p id="text-acercade"><small>Soy un diseñador experimentado que busca trabajar con empresas y clientes de todo el mundo. Tengo experiencia en la entrega de diseño de UX/UI de extremo a extremo.&nbsp; Me interesa mejorar la vida de las personas a través del diseño y siempre busco aprender cosas nuevas todos los días.</small></p>
 		</div>
 		<div>
 			<input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
 		</div>
-	</div>
+</div>
 
 	<!-- Experiencia: -->
 	<div id="borde" class="contenedor_" >
+		<div class="btn-edit float-end" onClick="cambiar_parrafo2()"> 
+				<a href="\\" class="btn-right">
+				<i class="fa fa-pen" aria-hidden="true"></i>
+			</a>
+		</div>
 		<b> Experiencia: </b> <br>
-		<small> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam tenetur inventore deleniti quaerat hic
-			sunt ipsa dolores ducimus reiciendis optio cupiditate quis voluptas, natus, ea iusto temporibus
-			reprehenderit a nam. </small>
+		
+		<small> He estado construyendo sitios web desde 2005 con conocimientos en Wordpress, Joomla, Html, CSS, Photoshop, Corel, Dreamweaver&nbsp;<br>
+		Soy un entusiasta autodidacta!!!</small>
 	</div>
 
 	<!-- Educacion -->
 	<div id="borde" class="contenedor_">
+		<div class="btn-edit float-end" onClick="cambiar_parrafo2()"> 
+				<a href="\\" class="btn-right">	<i class="fa fa-pen" aria-hidden="true"></i></a>!!&nbsp; &nbsp;
+		</div>
 		<b>Educacion </b> <br> <small>
 			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam culpa est minima numquam sapiente
 			exercitationem ipsum fugit nemo ab cum nam </small>
@@ -153,30 +159,38 @@
 
 	<!-- Hard Skills & Softs Skills -->
 	<div id="borde" class="contenedor_">
-		<b> Hard Skills & Softs Skills </b>
+		<div class="btn-edit float-end" onClick="cambiar_parrafo2()"> 
+				<a href="\\" class="btn-right"><i class="fa fa-pen" aria-hidden="true"></i>	</a>
+		</div>
+	<b> Hard Skills & Softs Skills </b>
 		
 			<div>
 <small> Las hard skills son aquellas habilidades que pueden aprenderse mediante formación y evaluarse y acreditarse a
 	través de
-	una certificación o experiencia <profesional class="br">- Idiomas	
-	- Licenciaturas, formación, certificados - Contabilidad - Mecanografía
+	una certificación o experiencia - Idiomas	
+	- Licenciaturas, formación, certificados  - Mecanografía
 	- Lenguajes de programación
-	- Conocimientos de software - etc.</profesional></small><strong>
+	- Conocimientos de software - etc.<br>
+	<br>
+	
+</small><strong>
 			</div>
 				<div class="progress">
 					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
 						aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
 				</div>
-				<p class="destacado"> sistemas de gestión de contenidos (WordPress</p></strong>
+				<p class="destacado"> Sistemas de gestión de contenidos (WordPress)</p></strong>
 				<small> Las hard skills son aquellas habilidades que pueden aprenderse mediante formación y evaluarse y acreditarse a
 					través de
-					una certificación o experiencia profesional.</small>
+					una certificación o experiencia profesional.<br>
+				</small>
+		<br>
 				<div class="progress">
-					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+				  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
 						aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
 				</div>
 				<strong><p class="destacado">Softs Skills</p>
-			</strong> <strong> Deserunt soluta. Consectetur itaque numquam maxime porro.</strong> </small>
+			</strong> <strong> Deserunt soluta. Consectetur itaque numquam maxime.</strong> </small>
 
 	</div>
 
@@ -222,6 +236,10 @@
 			document.getElementById("edit-company").style.display = "block";
 			let texto = document.getElementById("info-company").innerText;
 			console.log(texto);
+		};
+		
+		function myFunction3(valor) {
+			document.getElementById("info-company").innerText = valor;
 		};
 
 		function myFunction2(valor) {

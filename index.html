@@ -60,7 +60,7 @@
 		<div id="info" style="padding: 16px;">
 			<img src="img/profile.jpg" class="profile-image" alt="profile-image">
 			<div class="btn-edit float-end" onClick="cambiar_parrafo2()"> 
-				<a href="\\" class="btn-right"><i class="fa fa-pen" aria-hidden="true"></i>	</a>
+				<a href="javascript:" class="btn-right"><i class="fa fa-pen" aria-hidden="true"></i>	</a>
 		</div>
 			<script>
 				// funcion que cambia:
@@ -123,7 +123,7 @@
 	<div id="borde" class="contenedor_">
 		<b>Acerca de mí: </b>
 		<div class="btn-edit float-end" onClick="cambiar_parrafo()">
-			<a href="\\" class="btn-right"><i class="fa fa-pen" aria-hidden="true"></i>	</a>	
+			<a href="javascript:" class="btn-right"><i class="fa fa-pen" aria-hidden="true"></i>	</a>	
 		</div>
 
 		<div>
@@ -133,24 +133,39 @@
 			<input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
 		</div>
 </div>
+<script>
+		// edit pexperiencia
+		function cambiar_parrafo3() {
+			document.getElementById("edit-experiencia").style.display = "block";
+			let texto3 = document.getElementById("text-acercade").innerText;
+			console.log(texto)
+		};
+		function myFunction4(valor) {
+			document.getElementById("text-experiencia").invertText = valor;
+
+		};
+	</script>
 
 	<!-- Experiencia: -->
 	<div id="borde" class="contenedor_" >
-		<div class="btn-edit float-end" onClick="cambiar_parrafo2()"> 
-				<a href="\\" class="btn-right">
+		<div class="btn-edit float-end" onClick="cambiar_parrafo3()"> 
+				<a href="javascript:" class="btn-right">
 				<i class="fa fa-pen" aria-hidden="true"></i>
 			</a>
 		</div>
 		<b> Experiencia: </b> <br>
 		
-		<small> He estado construyendo sitios web desde 2005 con conocimientos en Wordpress, Joomla, Html, CSS, Photoshop, Corel, Dreamweaver&nbsp;<br>
-		Soy un entusiasta autodidacta!!!</small>
-	</div>
-
+		<p id="text-experiencia"><small> He estado construyendo sitios web desde 2005 con conocimientos en Wordpress, Joomla, Html, CSS, Photoshop, Corel, Dreamweaver&nbsp;<br>
+		Soy un entusiasta autodidacta!!!</small></p>
+	
+    <div>
+			<input id="edit-experiencia" type="text" oninput="myFunction4(this.value)" style="display:none">
+		</div>
+</div>
 	<!-- Educacion -->
 	<div id="borde" class="contenedor_">
-		<div class="btn-edit float-end" onClick="cambiar_parrafo2()"> 
-				<a href="\\" class="btn-right">	<i class="fa fa-pen" aria-hidden="true"></i></a>!!&nbsp; &nbsp;
+		<div class="btn-edit float-end" onClick="cambiar_parrafo3()"> 
+				<a href="javascript:" class="btn-right">	<i class="fa fa-pen" aria-hidden="true"></i></a>
 		</div>
 		<b>Educacion </b> <br> <small>
 			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam culpa est minima numquam sapiente
@@ -160,7 +175,7 @@
 	<!-- Hard Skills & Softs Skills -->
 	<div id="borde" class="contenedor_">
 		<div class="btn-edit float-end" onClick="cambiar_parrafo2()"> 
-				<a href="\\" class="btn-right"><i class="fa fa-pen" aria-hidden="true"></i>	</a>
+				<a href="javascript:" class="btn-right"><i class="fa fa-pen" aria-hidden="true"></i>	</a>
 		</div>
 	<b> Hard Skills & Softs Skills </b>
 		
@@ -226,21 +241,13 @@
     -->
 	<script>
 
-
+<!-- Edit Acerca de mi -->
 		function cambiar_parrafo() {
 			document.getElementById("edit-acercade").style.display = "block";
 			let texto = document.getElementById("text-acercade").innerText;
 			console.log(texto);
 		};
-		function cambiar_parrafo2() {
-			document.getElementById("edit-company").style.display = "block";
-			let texto = document.getElementById("info-company").innerText;
-			console.log(texto);
-		};
 		
-		function myFunction3(valor) {
-			document.getElementById("info-company").innerText = valor;
-		};
 
 		function myFunction2(valor) {
 			document.getElementById("text-acercade").innerText = valor;
@@ -255,6 +262,52 @@
 			logMessage('Key "${e.key}" released [event: keyup]');
 			if (e.key == "Enter") {
 				document.getElementById("edit-acercade").style.display = "none"
+			}
+		});
+		
+<!-- Edit Profile -->		
+		function cambiar_parrafo2() {
+			document.getElementById("edit-company").style.display = "block";
+			let texto = document.getElementById("info-company").innerText;
+			console.log(texto);
+		};
+		
+		function myFunction3(valor) {
+			document.getElementById("info-company").innerText = valor;
+		};
+		
+		function logMessage(message) {
+			console.log(message + "<br>");
+		}
+		
+		let textarea2 = document.getElementById("edit-company")
+		textarea2.addEventListener('keyup', (e) => {
+			logMessage('Key "${e.key}" released [event: keyup]');
+			if (e.key == "Enter") {
+				document.getElementById("edit-company").style.display = "none"
+			}
+		});
+
+<!-- Edit Experiencia -->		
+		function cambiar_parrafo3() {
+			document.getElementById("edit-experiencia").style.display = "block";
+			let texto = document.getElementById("text-experiencia").innerText;
+			console.log(texto);
+		};
+		
+		function myFunction4(valor) {
+			document.getElementById("text-experiencia").innerText = valor;
+		};
+		
+		function logMessage(message) {
+			console.log(message + "<br>");
+		}
+		
+		let textarea3 = document.getElementById("edit-experiencia")
+		textarea3.addEventListener('keyup', (e) => {
+			logMessage('Key "${e.key}" released [event: keyup]');
+			if (e.key == "Enter") {
+				document.getElementById("edit-experiencia").style.display = "none"
 			}
 		});
 
